@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: oci-testcase-4
+spec:
+  destination:
+    namespace: oci-testcase-4
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    path: .
+    repoURL: 'oci://ghcr.io/sabre1041/argocd-oci-testcases/oci-manifests-flat'
+    targetRevision: sha256:ba192afeeafb3be78f10ccf4f68c62886e8818f4c3e653932620eb9654ddb9e0
+  syncPolicy:
+    automated: {}
+    syncOptions:
+      - CreateNamespace=true

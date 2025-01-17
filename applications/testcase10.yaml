@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: oci-testcase-10
+spec:
+  destination:
+    namespace: oci-testcase-10
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    path: .
+    repoURL: 'oci://ghcr.io/sabre1041/argocd-oci-testcases/oci-manifests-flat-custom-mediatype'
+    targetRevision: latest
+  syncPolicy:
+    automated: {}
+    syncOptions:
+      - CreateNamespace=true

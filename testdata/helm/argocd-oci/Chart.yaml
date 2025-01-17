@@ -1,0 +1,4 @@
+apiVersion: v2
+name: argocd-oci
+description: Helm chart to test Argo CD OCI Integration
+version: 0.1.0

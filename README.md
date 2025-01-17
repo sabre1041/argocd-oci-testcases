@@ -18,4 +18,8 @@ In order to make use of the test cases described within this repository, Argo CD
 | Manifests Within a Path | Reference a specific path within a native OCI artifact | [Link](docs/testcase6.md) | 
 | Authenticated Repository | Resolve and retrieve native OCI artifact from an authenticated repository | [Link](docs/testcase7.md) | 
 | Invalid Repository | Resolve and retrieve native OCI artifact from an authenticated registry | [Link](docs/testcase8.md) | 
-| Custom Media Type (Not Configured in Argo CD) | Resolve and retrieve native OCI artifact that utilizes a custom MediaType for the layer containing the native OCI artifact | [Link](docs/testcase9.md) | 
+| Custom Media Type (Not Configured in Argo CD) | Resolve and retrieve native OCI artifact that utilizes a custom MediaType for the layer containing the native OCI artifact that is not allowed by the Argo CD Server | [Link](docs/testcase9.md) |
+| Custom Media Type | Resolve and retrieve native OCI artifact that utilizes a custom MediaType for the layer containing the native OCI artifact | [Link](docs/testcase9.md) |
+| Untrusted certificates | Utilize a native OCI artifact from a repository that exposes certificates that are not trusted by Argo CD | [Link](docs/testcase11.md) | 
+| HTTP based repository | Utilize a native OCI artifact from a repository that only exposes HTTP based connectivity | [Link](docs/testcase12.md) | 
+| Edit Application in UI | Update the content of an existing _Application_ in the Argo CD UI | [Link](docs/testcase13.md) | 
